@@ -48,7 +48,7 @@ export default class Footer extends Component {
                     </div>
                     <div className="mt-4">
                         <img src="images/Group 272.png" className="mr-2 mb-2" height="37px" alt=""/>
-                        <img src="images/Group 269.png" alt=""/>
+                        <img src="images/Group 269.png" alt="" className="mb-2"/>
                     </div>
                 </div>
             </div>

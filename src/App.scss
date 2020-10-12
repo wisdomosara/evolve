@@ -74,7 +74,7 @@
 .carousel-item{
   img{
     width: 100%;
-    max-height: 650px;
+    height: 650px;
     object-fit: cover;
     @media screen and (min-width: 768px) and (max-width: 992px) {
       min-height: 550px;
@@ -450,6 +450,7 @@
   }
   .FooterHover{
     margin-bottom: 5px;
+    width: fit-content;
     &:hover{
       color: #F4811F;
     }
