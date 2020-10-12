@@ -16,9 +16,9 @@
   input{
     border-style: none;
     width: 90%;
-    font-size: 12px;
+    font-size: 11px;
     @media screen and (max-width: 767px) {
-      width: 90%;
+      width: 80%;
       background: transparent;
     };
     &:hover{
@@ -30,15 +30,30 @@
     
   }
 }
+.sidebar{
+  position: absolute;
+  z-index:30;
+  left: -100%;
+  transition: all 0.6s ease;
+  background-color: black;
+  p{
+    width: fit-content
+  }
+}
 .header-item{
   margin: 10px !important;
   padding: 0 !important;
   p{
-    font-size: 14px
+    font-size: 14px;
+    cursor: pointer;
   }
 }
 .second-header{
   border-bottom: 0.5px solid #828282;
+  p{
+    font-weight: 600;
+    color: #4F4F4F;
+  }
 }
 .third-header{
   overflow-x: auto;
@@ -52,10 +67,14 @@
     }
   }
 }
+
+.orange-text{
+  color: #F4811F
+}
 .carousel-item{
   img{
     width: 100%;
-    max-height: 48vw;
+    max-height: 650px;
     object-fit: cover;
     @media screen and (min-width: 768px) and (max-width: 992px) {
       min-height: 550px;
@@ -159,7 +178,7 @@
 .SpaceItem{
   position: relative;
   width: 32.5%;
-  @media screen  and (max-width: 677px ){
+  @media screen  and (max-width: 767px ){
     width: 31%;
   }
   border-radius: 5px;
@@ -175,11 +194,15 @@
     height: 272px;
     border-radius: 5px;
     max-height: 272px;
-    @media screen  and (max-width: 677px ){
+    @media screen  and (max-width: 767px ){
       height: 128px;
       max-height: 128px;
     }
     object-fit: cover;
+  }
+
+  .space-small{
+    font-size: 12px;
   }
   .SpaceTag{
     position: absolute;
@@ -192,7 +215,253 @@
     color: #F4811F;
     h4{
       font-size: 16px;
-      font-weight: normal
+      font-weight: 500
     }
   }
+}
+
+.FeaturedCategories{
+    h4{font-size: 20px;
+    font-weight: 600;
+    @media screen and  (max-width: 767px) {
+      font-size: 18px
+    };
+  }
+}
+
+.featuredCategoryItem{
+  width: 100% !important;
+  
+  img{
+    width: 100%;
+    height: 496px;
+    @media screen and  (max-width: 767px) {
+      height: 177px;
+    };
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      height: 320px;
+    };
+    object-fit: cover;
+  };
+  .FeaturedCategoryTag{
+    position: absolute;
+    width: auto;
+    height: 47px;
+    left: 8%;
+    border-radius: 5px;
+    bottom: 10%;
+    background-color: white;
+    color: #F4811F;
+    @media screen  and (max-width:767px){
+      width: auto;
+      height: 32px;
+      left: 8%;
+      border-radius: 5px;
+      bottom: 10%;
+      background-color: #FFCA05;
+      color: black;
+    }
+    h4{
+      font-size: 16px;
+      font-weight: normal;
+      @media screen  and (max-width:767px) {
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: right !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-dots {
+  display:  none !important;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-nav .disabled {
+  opacity: 1 !important;
+  cursor: default;
+}
+
+.PopularProductsDiv{
+    box-shadow: 0px 24px 44px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    h4{
+      font-size: 20px;
+      font-weight: 600;
+      @media screen and  (max-width: 767px) {
+        font-size: 18px
+      };
+    }
+}
+
+.old-price{
+  color: #FF0000;
+  text-decoration-line: line-through;
+}
+.PopularScroll{
+  overflow-x: scroll;
+}
+
+.PopularProductsItem{
+  width: 24%;
+  position: relative;
+  @media screen and  (max-width: 767px) {
+    min-width: 37%;
+  };
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 32%;
+  };
+  img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    @media screen and  (max-width: 767px) {
+      height: 200px;
+    };
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      height: 200px;
+    };
+  }
+  h5{
+    font-size: 12px;
+    @media screen and  (max-width: 767px) {
+      font-size: 12px;
+      font-weight: 600
+    };
+  }
+  p{
+    font-size: 14px;
+    font-weight: 600;
+    @media screen and  (max-width: 767px) {
+      font-size: 12px
+    };
+  }
+  .PopularProductsTag{
+    position: absolute;
+    left: 0;
+    
+    top: 10%;
+    background-color: black;
+    color: white;
+    h4{
+      font-size: 19px;
+      @media screen and  (max-width: 767px) {
+        font-size: 10px
+      };
+    }
+  }
+}
+
+.view-all{
+  font-size: 14px !important;
+  color: #F4811F;
+  @media screen and  (max-width: 767px) {
+    font-size: 12px !important
+  };
+}
+
+.MobileViewAll{
+  width: 100%;
+  background: black;
+  
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 48px;
+  p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #F2F2F2;
+  }
+}
+
+.mailing{
+  background: #F2F2F2;
+  border-radius: 5px;
+
+  h4{
+    font-size: 18px
+  };
+  p{
+    font-size: 14px;
+    width: 280px;
+    @media screen and  (max-width: 767px) {
+      width: 100%;
+    };
+  }
+  input{
+    border-style: none;
+    width: 60%;
+    background: #F2F2F2;
+    border-bottom: 0.5px solid #000000;
+    font-size: 12px;
+    &:hover{
+      outline: none
+    }
+    &:focus{
+      outline: none
+    }
+  }
+  button{
+    background: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 176px;
+    height: 64px;
+    color: white;
+    @media screen and  (max-width: 767px) {
+      width: 50%;
+      height: 48px
+    };
+  } 
+}
+
+.Footer{
+ background: #333333;
+ color: white;
+ font-size: 12px;
+ .FooterItem{
+   width: 23%;
+   h5{
+     font-size: 14px;
+     font-weight: 600;
+   }
+  .FooterDetails{
+    width: 88%;
+  }
+   @media screen and  (max-width: 767px) {
+   width: 100%;
+  };
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 30%;
+    
+  };
+  .FooterHeader{
+    height: 48px;
+  }
+  .FooterHover{
+    margin-bottom: 5px;
+    &:hover{
+      color: #F4811F;
+    }
+  }
+ }
+}
+
+.contacts{
+  background: black
+}
+
+.MobileContacts{
+  padding-left: 0;
+  padding-right: 0
 }

@@ -4,8 +4,8 @@ export default class BigScreenHeader extends Component {
     render() {
         return (
             <div className="container-fluid px-0 d-md-block d-none">
-                <div className="container-fluid bg-dark">
-                    <div className="container d-flex align-items-center py-3 flex-wrap">
+                <div className="container-fluid contacts">
+                    <div className="container d-flex align-items-center py-1 flex-wrap">
                         <div className="d-flex align-items-baseline mr-3 header-item">
                             <img src="images/Vector (36).png" width="15px" className="mr-3"></img>
                             <p className="text-white mb-0">+234 802 501 8557</p>
