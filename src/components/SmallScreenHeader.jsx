@@ -5,7 +5,7 @@ export default class SmallScreenHeader extends Component {
     return (
       <div className="d-block d-md-none container">
         <div className="d-flex justify-content-between align-items-center py-2">
-            <img src={this.props.state ? "images/close.png" : "images/Group (3).png"} width="25px" height="20px" onClick={this.props.handleMobile}></img>
+            {this.props.state ? <img src="images/close.png" width="25px" height="25px" onClick={this.props.handleMobile}></img> : <img src="images/Group (3).png" width="25px" height="18px" onClick={this.props.handleMobile}></img> }
             <img src="images/Group 56 (1).png" width="62px" height="35px"></img>
             <img src="images/Vector (42).png" width="18px" height="19px"></img>
         </div>
