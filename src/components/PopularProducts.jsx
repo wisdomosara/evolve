@@ -11,7 +11,7 @@ function PopularProductsItem(props) {
             <h5 className="mt-3 mb-2">{props.data.name}</h5>
             <div className="d-flex justify-content-between">
                 <p className="mb-0">{props.data.price}</p>
-                {props.data.oldd ? <p className="mb-0 old-price">{props.data.old}</p> : null}
+                {props.data.oldd ? <p className="mb-0 old-price d-md-none">{props.data.old}</p> : null}
             </div>
         </div>
     )
